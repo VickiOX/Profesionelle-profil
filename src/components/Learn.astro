@@ -1,0 +1,56 @@
+---
+
+---
+<article> 
+    <h2 class=" pt-20 pb-10 md:pb-12 lg:pb-16  text-center bg-neutral-100 text-3xl md:pt-36 lg:pt-48 lg:text-7xl xl:text-8xl">HVAD JEG VIL</h2>
+    <section class="py-8 md:py-16 lg:py-24 fadeIns1"> <!--fadein left -->
+        <h3 class=" text-xl lg:text-2xl xl:text-3xl">NYE DESIGN FRAMESWORKS OG ANIMATION</h3>
+        <p class="text-lg md:text-xl w-[400px] md:w-[600px] lg:w-[800px] xl:w-[1000px]">Løse digitale løsninger i figma evt lære mere i figma.
+            Lære mere dybtegående animationer evt video content.
+            Være med til at skabe nye design identiteter til virksomheder.</p>
+    </section>
+    <section class="flex justify-end fadeIns2">  <!--fadein right -->
+        <div> 
+        <h3 class=" text-xl lg:text-2xl xl:text-3xl">NYE KODE FRAMEWORKS OG BIBLOTEKER</h3>
+        <p class="text-lg md:text-xl">Bliv bedre til at implementere figma til koden.<br>
+            Lære nye frameworks / sprog</p>
+        </div>
+    </section>
+    <section class="py-8  md:py-16 lg:py-24 fadeIns3">  <!--fadein left -->
+        <h3 class=" text-xl lg:text-2xl xl:text-3xl">NYE DESIGN PROCESS OG VÆRKTØJER</h3>
+        <p class="text-lg md:text-xl">Lære og indgå i et team og evt lære nye design metoder.</p>
+    </section>
+</article>
+
+<script>
+
+    import { inView } from "motion";
+    
+    
+    //fadeInLeft
+    
+    const fadeIns1 = document.querySelector(".fadeIns1");
+    
+    inView(fadeIns1, () => {
+    
+        fadeIns1.classList.add("animate__animated", "animate__fadeInLeft", "animate__delay-1s");
+    
+    }); 
+    
+    const fadeIns3 = document.querySelector(".fadeIns3");
+    
+    inView(fadeIns3, () => {
+    
+        fadeIns3.classList.add("animate__animated", "animate__fadeInLeft", "animate__delay-1s");
+    
+    }); 
+    
+     //fadeInRight
+    const fadeIns2 = document.querySelector(".fadeIns2");
+    
+    inView(fadeIns2, () => {
+    
+        fadeIns2.classList.add("animate__animated", "animate__fadeInRight", "animate__delay-1s");
+    
+    }); 
+    </script>

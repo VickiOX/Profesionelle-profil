@@ -1,0 +1,18 @@
+---
+const {imgi,img1,img2,img3,img4,img5, text} = Astro.props;
+---
+
+<div > <!--indsæt billede af program/skill -->
+    <div class="grid grid-cols-2"> 
+        <img src={imgi} class="w-10 h-10">
+        
+    <div class="flex mt-3 w-6 h-6 lg:mx-4"> <!-- indsæt båd "ikoner her" ret til så man kan vælge en variant med img i skills hvis muligt, få hjælp i morgen til det -->
+        <img src={img1}>
+        <img src={img2}>
+        <img src={img3}>
+        <img src={img4}>
+        <img src={img5}>
+    </div>
+    </div>
+    <p class="pb-4 w-10 text-center text-lg md:text-xl">{text}</p>
+</div>

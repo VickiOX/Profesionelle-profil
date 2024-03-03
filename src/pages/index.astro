@@ -1,39 +1,83 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
+import Skills from "../components/Skills.astro";
+import Intro from "../components/Intro.astro";
+import Projects from "../components/Projects.astro";
+import Learn from "../components/Learn.astro";
+import Contact from "../components/Contact.astro";
 ---
-<MainLayout title="Astro, Tailwind, Alpine, Motion One og Animate CSS Starter">
-	<article class="prose" x-data>
-		<h1>Astro, Tailwind, Alpine, Motion One og Animate CSS kombineret i en fin, lille starter:-)</h1>
-		<p>Brug starteren til at komme godt i gang med dine Digital Design projekter</p>
-		<p>Se også:</p>
-		<ul>
-			<li><a href="https://astro.build/" alt="Astro Website" target="_blank">Astro</a></li>
-			<li><a href="https://tailwindcss.com/" alt="Tailwind CSS website" target="_blank">Tailwind</a></li>
-			<li><a href="https://alpinejs.dev/" alt="Alpine JS website" target="_blank">Alpine.js</a></li>
-			<li><a href="https://motion.dev/" alt="Motion One website" target="_blank">Motion One</a></li>
-			<li><a href="https://animate.style/" alt="Animate.CSS website" target="_blank">Animate CSS</a></li>
-		</ul>
-		<p>
-			Start med at clone repo'et fra Github: <a href="https://github.com/stefangrage/astro-tailwind-alpine-motion-animate-starter" alt="Astro, Tailwind, Alpine, Motion One og Animate CSS Starter">https://github.com/stefangrage/astro-tailwind-alpine-motion-animate-starter</a>
-		</p>
-		<p>
-			Tilpas derefter indholdet i "pages, layouts, components og assets...
-		</p>
-		<p>
-			Og vigtigst af alt: Lav noget godt:-)
-		</p>
-		<p>
-			Se også <a href="http://motherfuckingwebsite.com/" alt="mf website">dette lille site</a> for lidt inspiration.
-		</p>
-		<div>
-		<Button>Fang mig hvis du kan:-)</Button>
-		</div>
+<MainLayout title="Professionelle profil til praktik">
+	<article class="" x-data>
+		
+	<Intro></Intro> 
+	<Skills></Skills> 
+
+<div class="fadeInp1"> 
+	<Projects color="bg-sky-700" img1="./projects/festival_web.png" img2="./projects/festival_mobil.png" p1="FESTIVAL PROTOTYPE - FIGMA"></Projects>
+</div>
+
+<div class="fadeInp2"> 
+	<Projects dir="right" mdDir="mdRight" lgDir="lgRight" xlDir="xlRight" color="bg-sky-500" img3="./projects/ikoner_onebrick.png" img4="./projects/ikoner_onebrick2.png" img8="./projects/oversigt_onebrick.png" p2="ONEBRICK EKSAMENSPROJEKT - IKONER" link1="https://www.youtube.com/watch?v=XLeHp3iFn7g" linktext1="ANIMATION - PROTOTYPE"></Projects> 
+</div>
+
+<div class="fadeInp3">
+	<Projects color="bg-sky-200" img5="./projects/ca_designsystemm.png" img6="./projects/t5_web.png" p3="CA PROJEKT OG  T5:VALPYPARKEN - REDESGIN"></Projects>
+</div>
+
+<div class="fadeInp4"> 
+	<Projects  dir="right"  mdDir="mdRight" lgDir="lgRight"  xlDir="xlRight" color="bg-sky-500" img7="./projects/interview_web.png" p4="T5:INTERVIEW - WEBSITE" link="https://www.youtube.com/watch?v=VuUg8QSnw44" linktext="INTERVIEW AF IVAN LARSEN"></Projects>
+</div>
+
+
+	<Learn></Learn>  
+
+
+	<Contact></Contact> 
+
+	
+
 	</article>
 </MainLayout>
-<style>
-	ul>li:hover{
-		animation: headShake; /* referring directly to the animation's @keyframe declaration */
-  		animation-duration: 1s; /* don't forget to set a duration! */
-	}
-</style>
+
+
+<script>
+
+    import { inView } from "motion";
+    
+    
+    //fadeIn
+    
+    const fadeInp1 = document.querySelector(".fadeInp1");
+    
+    inView(fadeInp1, () => {
+    
+        fadeInp1.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+    
+    }); 
+    
+    const fadeInp2 = document.querySelector(".fadeInp2");
+    
+    inView(fadeInp2, () => {
+    
+        fadeInp2.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+    
+    }); 
+    
+    const fadeInp3 = document.querySelector(".fadeInp3");
+    
+    inView(fadeInp3, () => {
+    
+        fadeInp3.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+    
+    }); 
+    
+    const fadeInp4 = document.querySelector(".fadeInp4");
+    
+    inView(fadeInp4, () => {
+    
+        fadeInp4.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+    
+    }); 
+    
+    
+    </script>

@@ -1,0 +1,64 @@
+---
+const {img1, img2, img3, img4, img5, img6, img7, img8, color, dir, p1, p2, p3, p4, link, linktext, link1, linktext1, mdDir,lgDir, xlDir} = Astro.props;
+
+const right = dir ==="right" ? "right-0" : "left-0";
+
+const mdRight = mdDir === "mdRight" ? "md:ml-[300px]" : "md:mr-[200px]";
+
+const lgRight = lgDir === "lgRight" ? "lg:ml-[500px]" : "lg:mr-[350px]";
+
+const xlRight = xlDir === "xlRight" ? "xl:ml-[680px]" : "xl:mr-[540px]";
+
+---
+
+<div>
+    <div class="transparrent_wrapper relative h-[600px]"> 
+        <div class="bilede_1 z-50 absolute w-[300px] left-[100px] xl:w-[500px] md:w-[400px] lg:w-[500px] xl:top-[-10px] hover:scale-110 duration-300 ">
+            <img src={img1}>
+        </div>
+
+        <div class="bilede_2 z-50 absolute  w-[180px] top-[260px] left-[10px] xl:w-[260px] lg:w-[220px] hover:scale-110 duration-300">
+            <img src={img2}>
+        </div>
+        <p class=" fadeInp1 absolute z-50 bottom-[-10px] left-[190px]  text-lg lg:text-2xl xl:text-3xl md:bottom-[10px] lg:left-[230px] xl:left-[270px]">{p1}</p>
+
+        <div class="z-50 absolute w-[300px] top-[300px] md:top-[260px] md:left-[220px]  md:w-[340px] lg:w-[360px] lg:left-[400px] xl:left-[700px] 2xl:left-[800px] hover:scale-110 duration-300">
+            <img src={img3}>
+        </div>
+
+        <div class="z-50 absolute w-[140px] top-[140px] left-[300px] md:left-[600px] lg:w-[180px] lg:left-[830px] lg:top-[0px] xl:left-[1100px] 2xl:left-[1300px] hover:scale-110 duration-300">
+            <img src={img4}>
+        </div>
+        <p class="absolute z-50 bottom-3 left-[44px]  text-lg lg:text-2xl xl:text-3xl md:ml-[300px] lg:left-[240px] xl:left-[420px] ">{p2}</p>
+
+        <div class="z-50 absolute w-[300px] top-340px] left-[80px] md:w-[400px] lg:w-[460px] xl:top-[-60px] hover:scale-110 duration-300">
+            <img src={img5}>
+        </div>
+
+        <div class="z-50 absolute w-[400px] top-[280px] left-[60px]  md:w-[480px] md:left-[160px]  lg:w-[520px] xl:left-[240px] xl:top-[250px] xl:w-[580px] hover:scale-110 duration-300">
+            <img src={img6}>
+        </div>
+        <p class="absolute z-50 bottom-3  text-lg lg:text-2xl xl:text-3xl ">{p3}</p>
+
+        <div class="z-50 absolute  w-[400px] top-[180px] left-[10px] md:w-[520px] md:left-[200px] lg:w-[580px] lg:left-[400px] xl:left-[670px] xl:w-[620px] 2xl:w-[740px] 2xl:top-[110px] hover:scale-110 duration-300">
+            <img src={img7}>
+        </div>
+     
+
+        <div class="z-40 absolute  w-[370px] top-[20px] md:left-[230px]  md:w-[500px] lg:w-[580px] xl:left-[500px] 2xl:left-[660px] hover:scale-110 duration-300">
+            <img src={img8}>
+        </div>
+        <p class="absolute z-50 bottom-3 left-[44px]  text-lg lg:text-2xl xl:text-3xl md:ml-[300px] lg:left-[240px] xl:left-[420px] ">{p4}</p>
+
+        <a class="z-50 absolute bottom-10 text-lg lg:text-2xl xl:text-3xl left-[100px] text-neutral-100 underline md:ml-[240px] lg:left-[300px] xl:left-[480px]  hover:scale-110 duration-300" target="_blank" href={link}>{linktext}</a>
+
+        <a class="z-50 absolute bottom-10 text-neutral-100 text-lg lg:text-2xl xl:text-3xl left-[44px] underline md:ml-[300px] lg:left-[240px] xl:left-[420px] hover:scale-110 duration-300" target="_blank" href={link1}>{linktext1}</a>
+
+        <div class=` absolute inset-10 ${right} ${color} ${mdRight} ${lgRight} ${xlRight} z-0 py-8`>
+        </div>
+    </div>
+
+</div>
+
+
+    

@@ -1,0 +1,33 @@
+---
+---
+<article class="">
+    <h2 class=" pt-20 md:pt-24 lg:pt-32 pb-8 text-center bg-neutral-100 text-3xl lg:text-7xl xl:text-8xl tada1">KONTAKT MIG</h2>
+    <div class=" flex place-content-center text-lg lg:text-2xl xl:text-3xl tada2"> 
+        <p>Du kan se mere på min LinkedIn , <br> GitHub elller du kan skrive en mail.</p>
+    </div>
+
+    <div class="flex-row pt-10 text-lg lg:text-2xl xl:text-3xl md:pt-16 lg:pt-20">
+        <p>Mail</p>
+        <a class="underline hover:underline-offset-4 hover:text-xl hover:lg:text-3xl hover:xl:text-4xl duration-300" href=mailto:“viox0001@stud.kea.dk”>viox0001@stud.kea.dk</a>
+    </div>
+</article>
+
+<script>
+     /* indsæt animate__tada på hele*/
+     import { inView } from "motion";
+     const tada1 = document.querySelector(".tada1");
+    
+    inView(tada1, () => {
+    
+        tada1.classList.add("animate__animated", "animate__tada", "animate__delay-1s");
+    
+    }); 
+
+    const tada2 = document.querySelector(".tada2");
+    
+    inView(tada2, () => {
+    
+        tada2.classList.add("animate__animated", "animate__tada", "animate__delay-1s");
+    
+    }); 
+</script>
