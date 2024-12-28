@@ -1,64 +1,116 @@
 ---
-const {img1, img2, img3, img4, img5, img6, img7, img8, color, dir, p1, p2, p3, p4, link, linktext, link1, linktext1, mdDir,lgDir, xlDir} = Astro.props;
-
-const right = dir ==="right" ? "right-0" : "left-0";
-
-const mdRight = mdDir === "mdRight" ? "md:ml-[300px]" : "md:mr-[200px]";
-
-const lgRight = lgDir === "lgRight" ? "lg:ml-[500px]" : "lg:mr-[350px]";
-
-const xlRight = xlDir === "xlRight" ? "xl:ml-[680px]" : "xl:mr-[540px]";
-
+import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
+import ArrowUp from "../assets/images/arrow-down.svg";
+import ArrowDown from "../assets/images/arrow-up.svg";
+import ProjectsCards from "./ProjectsCards.astro";
 ---
-
 <div>
-    <div class="transparrent_wrapper relative h-[600px]"> 
-        <div class="bilede_1 z-50 absolute w-[300px] left-[100px] xl:w-[500px] md:w-[400px] lg:w-[500px] xl:top-[-10px] hover:scale-110 duration-300 ">
-            <img src={img1}>
+
+
+
+    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-2 py-2.5 text-center items-center inline-flex  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-96 " type="button">1 Semester <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg>
+        </button>
+        
+        <!-- Dropdown menu -->
+        <div id="dropdown" class="z-10 hidden ">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200 md:flex justify-around gap-8" aria-labelledby="dropdownDefaultButton">
+              <li class="">
+                <ProjectsCards imgp="/projects/emnesite.png" titelp="Emnesite" textp="- Her var opgaven at lave et website med et valgfrit valgfrit enme og valgte specifikke stilart til design " linkp="https://emnesite1sem.netlify.app" linktextp="Emnesite"/>
+              </li>
+              <li>
+                <ProjectsCards imgp="/projects/interview_web.png" titelp="Interviewsite" textp="- Her fik jeg interviewet en spændende person og skulle lave et website til hvor videoen fra youtube og opbygningen til video kan ses" href="" linktextp="Interviewsite"/>
+              </li>
+              <li>
+                <ProjectsCards imgp="/projects/t5_web.png" titelp="Virksomhedssite" textp="- Her blev der redesignet og kodet et nyt website til valbyparken disc golf, som var den første virksomhed jeg skulle arbejde med" href="" linktextp="Valbyparken - Disc golf"/>
+              </li>
+            </ul>
         </div>
 
-        <div class="bilede_2 z-50 absolute  w-[180px] top-[260px] left-[10px] xl:w-[260px] lg:w-[220px] hover:scale-110 duration-300">
-            <img src={img2}>
-        </div>
-        <p class=" fadeInp1 absolute z-50 bottom-[-10px] left-[190px]  text-lg lg:text-2xl xl:text-3xl md:bottom-[10px] lg:left-[230px] xl:left-[270px]">{p1}</p>
-
-        <div class="z-50 absolute w-[300px] top-[300px] md:top-[260px] md:left-[220px]  md:w-[340px] lg:w-[360px] lg:left-[400px] xl:left-[700px] 2xl:left-[800px] hover:scale-110 duration-300">
-            <img src={img3}>
-        </div>
-
-        <div class="z-50 absolute w-[140px] top-[140px] left-[300px] md:left-[600px] lg:w-[180px] lg:left-[830px] lg:top-[0px] xl:left-[1100px] 2xl:left-[1300px] hover:scale-110 duration-300">
-            <img src={img4}>
-        </div>
-        <p class="absolute z-50 bottom-3 left-[44px]  text-lg lg:text-2xl xl:text-3xl md:ml-[300px] lg:left-[240px] xl:left-[420px] ">{p2}</p>
-
-        <div class="z-50 absolute w-[300px] top-340px] left-[80px] md:w-[400px] lg:w-[460px] xl:top-[-60px] hover:scale-110 duration-300">
-            <img src={img5}>
-        </div>
-
-        <div class="z-50 absolute w-[400px] top-[280px] left-[60px]  md:w-[480px] md:left-[160px]  lg:w-[520px] xl:left-[240px] xl:top-[250px] xl:w-[580px] hover:scale-110 duration-300">
-            <img src={img6}>
-        </div>
-        <p class="absolute z-50 bottom-3  text-lg lg:text-2xl xl:text-3xl ">{p3}</p>
-
-        <div class="z-50 absolute  w-[400px] top-[180px] left-[10px] md:w-[520px] md:left-[200px] lg:w-[580px] lg:left-[400px] xl:left-[670px] xl:w-[620px] 2xl:w-[740px] 2xl:top-[110px] hover:scale-110 duration-300">
-            <img src={img7}>
-        </div>
-     
-
-        <div class="z-40 absolute  w-[370px] top-[20px] md:left-[230px]  md:w-[500px] lg:w-[580px] xl:left-[500px] 2xl:left-[660px] hover:scale-110 duration-300">
-            <img src={img8}>
-        </div>
-        <p class="absolute z-50 bottom-3 left-[44px]  text-lg lg:text-2xl xl:text-3xl md:ml-[300px] lg:left-[240px] xl:left-[420px] ">{p4}</p>
-
-        <a class="z-50 absolute bottom-10 text-lg lg:text-2xl xl:text-3xl left-[100px] text-neutral-100 underline md:ml-[240px] lg:left-[300px] xl:left-[480px]  hover:scale-110 duration-300" target="_blank" href={link}>{linktext}</a>
-
-        <a class="z-50 absolute bottom-10 text-neutral-100 text-lg lg:text-2xl xl:text-3xl left-[44px] underline md:ml-[300px] lg:left-[240px] xl:left-[420px] hover:scale-110 duration-300" target="_blank" href={link1}>{linktext1}</a>
-
-        <div class=` absolute inset-10 ${right} ${color} ${mdRight} ${lgRight} ${xlRight} z-0 py-8`>
+        <!-- 
+    <div class="2sem md:grid md:grid-cols-2 lg:grid-cols-3">
+        <div class="dropdown inline-block relative">
+            <button class="dropdown-btn border-2 py-10 px-16 cursor-pointer hover:bg-slate-400 flex items-center">
+                <p class="mr-2">2SEM</p> 
+                <!-- chevron-down --> <!-- 
+                <svg class="chevron-down w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+                <!-- chevron-up --> <!-- 
+                <svg class="chevron-up w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+            </button>
+            <div class="dropdown-options hidden absolute overflow-auto ">
+                <ProjectsCards imgp="/projects/ca_designsystemm.png" titelp="CA" textp="- Her blev der lavet en kampagne til civils ingeniørens a-kasse hvor der blev lavet video content til Sociale Medier" href="https://cat9kampagne.netlify.app" linktextp="CA: civils ingeniørens a-kasse"/>
+                <ProjectsCards imgp="/projects/onebrick.png" titelp="OneBrick" textp="- 2. semesters eksamensprojekt, her blev der lavet et website til en nyopstartet virksomhed en fokus på bæredygtighed" href="https://onebrick.netlify.app" linktextp="OneBrick"/>
+            </div>
         </div>
     </div>
 
-</div>
+    <div class="3sem md:grid md:grid-cols-2 lg:grid-cols-3">
+        <div class="dropdown inline-block relative">
+            <button class="dropdown-btn border-2 py-10 px-16 cursor-pointer hover:bg-slate-400 flex items-center">
+                <p class="mr-2">3SEM</p>
+                <!-- chevron-down --> <!--
+                <svg class="chevron-down w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+                <!-- chevron-up --> <!--
+                <svg class="chevron-up w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+            </button>
+            <div class="dropdown-options hidden absolute overflow-auto ">
+                <ProjectsCards imgp="/projects/cph-lab.png" titelp="CPH-LAB" textp="- 3. semesters eksamensprojekt, her blev der lavet et redesign til CPH-LAB som er en virksomhed som sælger analog kamera og fremkaldese af film" href="https://cph-lab.netlify.app" linktextp="CPH-LAB"/>
+                <ProjectsCards imgp="/projects/plasticchange.png" titelp="Plastic change" textp="- Her blev der lavet en kampagne som skulle laves til en scrollytelling til plastic change med fokus på brug af bitmap(dvs, almindelig fotos), hvor vi først lave en detaljeret figma prototype" href="https://singleusesucksplasticchange.netlify.app" linktextp="Plastic change"/>
+            </div>
+        </div>
+    </div>
+</div> -->
 
-
+<style>
+    .dropdown .chevron-up {
+      display: none;
+    }
     
+    .dropdown .dropdown-btn.open .chevron-up {
+      display: inline-block;
+    }
+    
+    .dropdown .dropdown-btn.open .chevron-down {
+      display: none;
+    }
+    
+    .dropdown:hover .dropdown-options {
+      display: block;
+    }
+    
+    .dropdown-options a {
+      display: block;
+      color: #000000;
+      padding: 5px;
+      text-decoration: none;
+      padding: 20px 40px;
+    }
+    
+    .dropdown-options a:hover {
+      color: #0a0a23;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+    </style>
+
+<script>
+    document.querySelectorAll('.dropdown-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const dropdownContent = button.nextElementSibling;
+            dropdownContent.classList.toggle('hidden');
+            
+            // Toggle chevron icons
+            button.classList.toggle('open');
+        });
+    });
+    </script>

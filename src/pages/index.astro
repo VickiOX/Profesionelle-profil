@@ -8,34 +8,11 @@ import Contact from "../components/Contact.astro";
 ---
 <MainLayout title="Professionelle profil til praktik">
 	<article class="" x-data>
-		<p>test</p>
-	<Intro></Intro> 
+		<!-- lav motion animation der kort swiper op når der scrolles -->
+	<Intro></Intro> <!-- udatering færdig for intro -->
 	<Skills></Skills> 
-
-<div class="fadeInp1"> 
-	<Projects color="bg-sky-700" img1="./projects/festival_web.png" img2="./projects/festival_mobil.png" p1="FESTIVAL PROTOTYPE - FIGMA"></Projects>
-</div>
-
-<div class="fadeInp2"> 
-	<Projects dir="right" mdDir="mdRight" lgDir="lgRight" xlDir="xlRight" color="bg-sky-500" img3="./projects/ikoner_onebrick.png" img4="./projects/ikoner_onebrick2.png" img8="./projects/oversigt_onebrick.png" p2="ONEBRICK EKSAMENSPROJEKT - IKONER" link1="https://www.youtube.com/watch?v=XLeHp3iFn7g" linktext1="ANIMATION - PROTOTYPE"></Projects> 
-</div>
-
-<div class="fadeInp3">
-	<Projects color="bg-sky-200" img5="./projects/ca_designsystemm.png" img6="./projects/t5_web.png" p3="CA PROJEKT OG  T5:VALPYPARKEN - REDESGIN"></Projects>
-</div>
-
-<div class="fadeInp4"> 
-	<Projects  dir="right"  mdDir="mdRight" lgDir="lgRight"  xlDir="xlRight" color="bg-sky-500" img7="./projects/interview_web.png" p4="T5:INTERVIEW - WEBSITE" link="https://www.youtube.com/watch?v=VuUg8QSnw44" linktext="INTERVIEW AF IVAN LARSEN"></Projects>
-</div>
-
-
+	<Projects></Projects>
 	<Learn></Learn>  
-
-
-	<Contact></Contact> 
-
-	
-
 	</article>
 </MainLayout>
 

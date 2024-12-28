@@ -3,77 +3,81 @@ import SkillsCards from "./SkillsCards.astro";
 
 ---
 
-<article>
-    <h2 class=" py-8  md:py-16 lg:py-24 text-center bg-neutral-100 text-3xl lg:text-7xl xl:text-8xl">SKILLS</h2>
+<article class="pt-8">
+    <h2 class=" text-2xl  md:text-3xl lg:text-4xl  xl:text-5xl ">SKILLS</h2>
     <div class="lg:flex lg:justify-around"> 
 
-        <section class="py-8 ">
+        <section class="p-4 bg-neutral-500 rounded-md my-4">
             <h3 class="pb-8  text-xl lg:text-2xl xl:text-3xl">VÆRKTØJER</h3>
-            <div class="grid grid-cols-2 px-6 fadeinV">
-                <div class="grid grid-cols-2"> 
-                <SkillsCards imgi="figma.png" text="Figma" img1="./båd.svg" img2="./båd.svg" img3="./båd.svg" img4="./båd.svg" img5="./båd.svg"/>
+            <div class="grid grid-cols-2">
+                <div class="mx-auto"> 
+                <SkillsCards imgi="figma.png" imgc="full_circel.svg" text="Figma" />
                 </div>
     
-                <div class="grid grid-cols-2"> 
-                <SkillsCards imgi="illustrator.png" text="Illustrator" img1="./båd.svg" img2="./båd.svg" img3="./båd.svg" img4="./båd.svg" img5="./bådT.svg"/>
+                <div class="mx-auto"> 
+                <SkillsCards imgi="illustrator.png" imgc="circel4.svg" text="Illustrator" />
                 </div>
     
-                <div class="grid grid-cols-2"> 
-                <SkillsCards imgi="xd.png" text=" Adobe XD" img1="./båd.svg" img2="./båd.svg" img3="./båd.svg" img4="./båd.svg" img5="./bådT.svg"/>
+                <div class="mx-auto"> 
+                <SkillsCards imgi="xd.png" imgc="circel3.svg" text=" Adobe XD"/>
                 </div>
     
-                <div class="grid grid-cols-2"> 
-                <SkillsCards imgi="vsc.png" text=" Visual Studio code" img1="./båd.svg" img2="./båd.svg" img3="./båd.svg" img4="./båd.svg" img5="./bådT.svg"/>
+                <div class="mx-auto"> 
+                <SkillsCards imgi="vsc.png" imgc="full_circel.svg" text=" Visual Studio code" />
                 </div>
     
-                <div class="grid grid-cols-2"> 
-                <SkillsCards imgi="spline.png" text="Spline" img1="./båd.svg" img2="./båd.svg" img3="./bådT.svg" img4="./bådT.svg" img5="./bådT.svg"/>
+                <div class="mx-auto"> 
+                <SkillsCards imgi="spline.png" imgc="circel1.svg" text="Spline" />
                 </div>
     
-                <div class="grid grid-cols-2">
-                <SkillsCards imgi="jitter.png" text="Jitter" img1="./båd.svg" img2="./bådT.svg" img3="./bådT.svg" img4="./bådT.svg" img5="./bådT.svg"/>
+                <div class="mx-auto">
+                <SkillsCards imgi="jitter.png" imgc="circel1.svg" text="Jitter"/>
                 </div>
+
+                <div class="mx-auto">
+                    <SkillsCards imgi="framer.svg" imgc="circel1.svg" text="Framer"/>
+                    </div>
             </div>
         </section>
 
-    <section class=" py-4  pb-20 ">
+    <section class=" p-4 bg-neutral-500 rounded-md my-4 ">
         <h3 class="pb-8   text-xl lg:text-2xl xl:text-3xl">SPROG</h3>
-        <div class="px-4 grid grid-cols-2 fadeinS">
-            <div class="grid grid-cols-2"> 
-            <SkillsCards imgi="html.png" text="HTML" img1="./båd.svg" img2="./båd.svg" img3="./båd.svg" img4="./båd.svg" img5="./bådT.svg"/>
+        <div class="grid grid-cols-2 ">
+            <div class="mx-auto"> 
+            <SkillsCards imgi="html.png" imgc="circel4.svg" text="HTML" />
             </div>
 
-            <div class="grid grid-cols-2">
-            <SkillsCards imgi="css.png" text="CSS" img1="./båd.svg" img2="./båd.svg" img3="./båd.svg" img4="./båd.svg" img5="./bådT.svg"/> 
+            <div class="mx-auto">
+            <SkillsCards imgi="css.png" imgc="circel4.svg" text="CSS" /> 
             <div class="w-14"></div> </div>
 
-            <div class="grid grid-cols-2">
-            <SkillsCards imgi="astro.png" text="Astro" img1="./båd.svg" img2="./båd.svg" img3="./båd.svg" img4="./bådT.svg" img5="./bådT.svg"/>
+            <div class="mx-auto">
+            <SkillsCards imgi="astro.png" imgc="circel3.svg" text="Astro" />
               
             </div>
 
-            <div class="grid grid-cols-2"> 
-            <SkillsCards imgi="tailwind.svg" text="Tailwind" img1="./båd.svg" img2="./båd.svg" img3="./båd.svg" img4="./bådT.svg" img5="./bådT.svg"/>
+            <div class="mx-auto"> 
+            <SkillsCards imgi="tailwind.svg" imgc="circel3.svg" text="Tailwind" />
                 
             </div>
 
-            <div class="grid grid-cols-2"> 
-            <SkillsCards imgi="js.webp" text="Js" img1="./båd.svg" img2="./båd.svg" img3="./bådT.svg" img4="./bådT.svg" img5="./bådT.svg"/>
+            <div class="mx-auto"> 
+            <SkillsCards imgi="js.webp" imgc="circel2.svg" text="Js" />
                 
             </div>
 
-            <div class="grid grid-cols-2">
-            <SkillsCards imgi="alpinejs.svg" text="Alpine" img1="./båd.svg" img2="./båd.svg" img3="./bådT.svg" img4="./bådT.svg" img5="./bådT.svg"/>
+            <div class="mx-auto">
+            <SkillsCards imgi="alpinejs.svg" imgc="circel2.svg" text="Alpine" />
              
             </div>
 
-            <div class="grid grid-cols-2"> 
-            <SkillsCards imgi="animatecss.svg" text="Animate.css" img1="./båd.svg" img2="./båd.svg" img3="./båd.svg" img4="./bådT.svg" img5="./bådT.svg"/>
+            <div class="mx-auto"> 
+            <SkillsCards imgi="animatecss.svg" imgc="circel3.svg" text="Animate.css" />
              
             </div>
 
-            <div class="grid grid-cols-2">
-            <SkillsCards imgi="motionone.png" text="Motion one" img1="./båd.svg" img2="./båd.svg" img3="./bådT.svg" img4="./bådT.svg" img5="./bådT.svg"/>
+            <div class="mx-auto">
+            <SkillsCards imgi="motionone.png" imgc="circel2.svg" text="Motion one" />
                
             </div>
         </div>
@@ -82,33 +86,3 @@ import SkillsCards from "./SkillsCards.astro";
     </div>
 </article>
 
-<script>
-    /* indsæt animate__fadeInLeft på navn med */ 
-
-  import { inView } from "motion";
-
-
-  //fadeIn
-    /* indsæt animate__fadeIn på banner med delay fra hver "random"*/ 
-  const fadeinV = document.querySelector(".fadeinV");
-
-  inView(fadeinV, () => {
-
-    fadeinV.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
-
-  }); 
-
-    const fadeinS = document.querySelector(".fadeinS");
-
-    inView(fadeinS, () => {
-
-        fadeinS.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
-
-    }); 
-
-
- 
-
- 
-
-</script>

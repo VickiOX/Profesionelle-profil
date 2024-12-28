@@ -1,25 +1,16 @@
 ---
-
+import LearnCards from "./LearnCards.astro";
 ---
 <article> 
-    <h2 class=" pt-20 pb-10 md:pb-12 lg:pb-16  text-center bg-neutral-100 text-3xl md:pt-36 lg:pt-48 lg:text-7xl xl:text-8xl">HVAD JEG VIL</h2>
-    <section class="py-8 md:py-16 lg:py-24 fadeIns1"> <!--fadein left -->
-        <h3 class=" text-xl lg:text-2xl xl:text-3xl">NYE DESIGN FRAMESWORKS OG ANIMATION</h3>
-        <p class="text-lg md:text-xl w-[400px] md:w-[600px] lg:w-[800px] xl:w-[1000px]">Løse digitale løsninger i figma evt lære mere i figma.
-            Lære mere dybtegående animationer evt video content.
-            Være med til at skabe nye design identiteter til virksomheder.</p>
-    </section>
-    <section class="flex justify-end fadeIns2">  <!--fadein right -->
-        <div> 
-        <h3 class=" text-xl lg:text-2xl xl:text-3xl">NYE KODE FRAMEWORKS OG BIBLOTEKER</h3>
-        <p class="text-lg md:text-xl">Bliv bedre til at implementere figma til koden.<br>
-            Lære nye frameworks / sprog</p>
-        </div>
-    </section>
-    <section class="py-8  md:py-16 lg:py-24 fadeIns3">  <!--fadein left -->
-        <h3 class=" text-xl lg:text-2xl xl:text-3xl">NYE DESIGN PROCESS OG VÆRKTØJER</h3>
-        <p class="text-lg md:text-xl">Lære og indgå i et team og evt lære nye design metoder.</p>
-    </section>
+    <h2 class=" pt-20 pb-10 md:pb-12 lg:pb-16  text-center bg-neutral-100 text-2xl md:pt-36 lg:pt-48 md:text-3xl lg:text-4xl  xl:text-5xl ">HVAD JEG VIL</h2>
+     
+    <LearnCards titlel="Nye design frameworks og animation" textl="Løse digitale løsninger i figma evt lære mere i figma. Lære mere dybtegående animationer evt video content. Være med til at skabe nye design identiteter til virksomheder."/>
+  
+
+    <LearnCards titlel="Nye kode frameworks og bibloteker" textl="Bliv bedre til at implementere figma til koden. Lære nye frameworks/sprog"/>
+
+    <LearnCards titlel="Nye design process og værktøjer" textl="Lære og indgå i et team og evt lære nye design metoder"/>
+
 </article>
 
 <script>
