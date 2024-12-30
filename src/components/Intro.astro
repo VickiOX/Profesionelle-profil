@@ -1,4 +1,5 @@
 ---
+const { link } = Astro.props;
 ---
 <div class="md:flex mt-10 justify-between ">
     <div>
@@ -14,7 +15,7 @@
         <p class="text-blue-950 md:w-[380px] xl:w-[560px] ml-4 md: mt-4 md:ml-5 lg:ml-7 xl:ml-10">Hi! My name is Victoria and im a multimediadesign student at KEA (Copenhagen School of Design and Technology). I will soon be finished with my education for my 2 years education for Multimediadesign, and begin on the top-up Digital Concept Development at the end of january 2025. <br> If you want to know more about me, fill free to contact me :)</p>
         <ul class="text-blue-950 ">
             <li class="my-6 ml-4 md:mt-6 md:ml-5 lg:ml-7 xl:ml-10 hover:scale-110 duration-150 hover:md:ml-10 hover:lg:ml-10 hover:xl:ml-14">
-                <a href="/" class=" bg-white px-4 py-2 my-2 mr-3 rounded-full transition ease-in-out duration-300 border-2 border-white hover:text-blue-800 hover:border-blue-500 font-medium">Contact</a>
+                <a href={link} class=" bg-white px-4 py-2 my-2 mr-3 rounded-full transition ease-in-out duration-300 border-2 border-white hover:text-blue-800 hover:border-blue-500 font-medium">Contact</a>
             </li>
         </ul>
        
