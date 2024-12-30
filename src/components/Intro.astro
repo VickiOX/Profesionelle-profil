@@ -7,8 +7,8 @@
         <img src="dot_protræt.png" alt="protrætfoto af Victoria Oxenbøll Sørensen" class=" mt-6 w-full mx-auto md:hidden lg:hidden  xl:hidden">
 
         <div class="relative text-blue-950 pb-6"> 
-        <h1 class="text-4xl md:text-6xl lg:text-7xl xl:text-8xl md:mt-28 lg:mt-36 xl:mt-32 font-semibold">Victoria</h1>
-        <h2 class=" absolute  left-3 top-8 md:left-4 md:top-12 lg:top-14 lg:left-6 xl:top-20 xl:left-8 text-2xl  md:text-3xl lg:text-4xl  xl:text-5xl w-[300px] md:w-[600px] font-semibold">Oxenbøll Sørensen</h2>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl xl:text-8xl md:mt-28 lg:mt-36 xl:mt-32 font-semibold fadeIn">Victoria</h1>
+        <h2 class=" absolute  left-3 top-8 md:left-4 md:top-12 lg:top-14 lg:left-6 xl:top-20 xl:left-8 text-2xl  md:text-3xl lg:text-4xl  xl:text-5xl w-[300px] md:w-[600px] font-semibold fadeIn2">Oxenbøll Sørensen</h2>
       
         </div>
         <p class="text-blue-950 md:w-[380px] xl:w-[560px] ml-4 md: mt-4 md:ml-5 lg:ml-7 xl:ml-10">Hi! My name is Victoria and im a multimediadesign student at KEA (Copenhagen School of Design and Technology). I will soon be finished with my education for my 2 years education for Multimediadesign, and begin on the top-up Digital Concept Development at the end of january 2025. <br> If you want to know more about me, fill free to contact me :)</p>
@@ -50,6 +50,25 @@
 </div>
 -->
 
-<style>
-
-</style>
+<script>
+     import { inView } from "motion";
+    
+    //fadeIn
+    
+    const fadeIn = document.querySelector(".fadeIn");
+    
+    inView(fadeIn, () => {
+    
+        fadeIn.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1.5s");
+    
+    }); 
+    
+    const fadeIn2 = document.querySelector(".fadeIn2");
+    
+    inView(fadeIn2, () => {
+    
+        fadeIn2.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+    
+    }); 
+    
+    </script>

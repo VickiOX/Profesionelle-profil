@@ -1,19 +1,31 @@
 ---
 ---
-<div class="bg-sky-700 text-neutral-100 text-lg lg:text-2xl xl:text-3xl">
+<div class="bg-blue-950 text-neutral-100 text-md lg:text-xl xl:text-2xl mt-20">
     <div class="mx-10 md:mx-20">
-        <h2 class="pt-14">KONTAKT MIG</h2>
-        <div class=""> 
-            <p>Du kan se mere på min LinkedIn , <br> GitHub elller du kan skrive en mail.</p>
+        <div class="pt-14"> 
+            <p>You can see more of me on my LinkedIn , <br> GitHub or else, write me an email</p>
         </div>
         <div class=" pt-10 text-lg l">
             <p>Mail</p>
             <a class="underline hover:underline-offset-4" href=mailto:“victoxen.soe@gmail.com”>victoxen.soe@gmail.com</a>
         </div>
    
-    <p class="pt-14 pb-6">Glæder mig til at hører fra jer! </p>
-    <img class="pb-6 rubberBand" src="smily.svg" alt="smiley">
-    <p class=" pb-14">@COPYRIGHT</p>
+<div class=" flex "> 
+    <p class="pt-14 pb-6">Glæder mig til at hører fra jer! Looking forward to hear from you! </p>
+    <img class="md:ml-4 md:pt-8 swing " src="smily.svg" alt="smiley">
+</div>
+    <p class=" pb-14 text-xs">@copyright2025</p>
     </div>
 </div>
 
+<script>
+    
+    import { inView } from "motion";
+    const fadeInp1 = document.querySelector(".swing");
+    
+    inView(fadeInp1, () => {
+    
+        fadeInp1.classList.add("animate__animated", "animate__swing", "animate__delay-1s");
+    });
+    
+</script>

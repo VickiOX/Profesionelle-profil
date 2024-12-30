@@ -1,10 +1,9 @@
 ---
-const {imgp,titelp, textp, linktextp, href} = Astro.props;
+const {imgp,titelp, textp, linkp} = Astro.props;
 ---
 
-<div class="bg-neutral-500 py-10 my-4 rounded-md w-[380px] h-[420px] ">
-    <h4 class="px-11 text-xl">{titelp}</h4>
-   <img src={imgp} class="w-[300px] mx-auto rounded-md">
-    <p class="px-11 text-md">{textp}</p>
-    <a href={href} class="px-11 text-md underline underline-offset-1 hover:underline-offset-4 duration-150 hover:text-lg ">{linktextp}</a>
-</div>
+<a href={linkp} target="_blank" class="">
+    <h4 class="text-xl font-medium">{titelp}</h4>
+        <img src={imgp} class=" w-[340px] md:w-[300px] lg:w-[500px] xl:w-[1000px] rounded-lg md:grayscale hover:grayscale-0 duration-150 hover:shadow-md hover:shadow-blue-500">
+    <p class="text-md max-w-[340px] md:max-w-[600px]">{textp}</p>
+</a>

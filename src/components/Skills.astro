@@ -2,87 +2,240 @@
 import SkillsCards from "./SkillsCards.astro";
 
 ---
+<article class=""> 
+<!-- Værktøjer mobil-->
+<section class="sticky md:hidden overflow-hidden mt-20">
+  <h3 class="xl:mt-20 text-xl lg:text-2xl xl:text-3xl">Værktøjer</h3>
+  <div class="sticky top-0 mangeelementerinview md:grid md:grid-cols-2 ">
+      
+  <div class="flex justify-between "> 
+    <div class="p-8  mangeelementer1 w-fit ">
+      <SkillsCards imgi="figma.png" imgc="full_circel.svg" text="Figma" />
+    </div>
 
-<article class="pt-8">
-    <h2 class=" text-2xl  md:text-3xl lg:text-4xl  xl:text-5xl ">SKILLS</h2>
-    <div class="lg:flex lg:justify-around"> 
+    <div class="p-8  mangeelementer2 w-fit">
+      <SkillsCards imgi="illustrator.png" imgc="circel4.svg" text="Illustrator" />
+    </div>
+  </div> 
 
-        <section class="p-4 bg-neutral-500 rounded-md my-4">
-            <h3 class="pb-8  text-xl lg:text-2xl xl:text-3xl">VÆRKTØJER</h3>
-            <div class="grid grid-cols-2">
-                <div class="mx-auto"> 
-                <SkillsCards imgi="figma.png" imgc="full_circel.svg" text="Figma" />
-                </div>
-    
-                <div class="mx-auto"> 
-                <SkillsCards imgi="illustrator.png" imgc="circel4.svg" text="Illustrator" />
-                </div>
-    
-                <div class="mx-auto"> 
-                <SkillsCards imgi="xd.png" imgc="circel3.svg" text=" Adobe XD"/>
-                </div>
-    
-                <div class="mx-auto"> 
-                <SkillsCards imgi="vsc.png" imgc="full_circel.svg" text=" Visual Studio code" />
-                </div>
-    
-                <div class="mx-auto"> 
-                <SkillsCards imgi="spline.png" imgc="circel1.svg" text="Spline" />
-                </div>
-    
-                <div class="mx-auto">
-                <SkillsCards imgi="jitter.png" imgc="circel1.svg" text="Jitter"/>
-                </div>
+  <div class="flex justify-between "> 
+    <div class="p-8  mangeelementer3 w-fit">
+      <SkillsCards imgi="xd.png" imgc="circel3.svg" text=" Adobe XD"/>
+    </div>
 
-                <div class="mx-auto">
-                    <SkillsCards imgi="framer.svg" imgc="circel1.svg" text="Framer"/>
-                    </div>
-            </div>
-        </section>
+    <div class="p-8  mangeelementer4 w-fit">
+      <SkillsCards imgi="vsc.png" imgc="full_circel.svg" text=" VS code" />
+    </div>
+</div>  
+      
 
-    <section class=" p-4 bg-neutral-500 rounded-md my-4 ">
-        <h3 class="pb-8   text-xl lg:text-2xl xl:text-3xl">SPROG</h3>
-        <div class="grid grid-cols-2 ">
-            <div class="mx-auto"> 
-            <SkillsCards imgi="html.png" imgc="circel4.svg" text="HTML" />
-            </div>
+  <div class="flex justify-between "> 
+    <div class="p-8 mangeelementer5 w-fit">
+      <SkillsCards imgi="spline.png" imgc="circel1.svg" text="Spline" />
+    </div>
 
-            <div class="mx-auto">
-            <SkillsCards imgi="css.png" imgc="circel4.svg" text="CSS" /> 
-            <div class="w-14"></div> </div>
+    <div class="p-8 mangeelementer6 w-fit">
+      <SkillsCards imgi="jitter.png" imgc="circel1.svg" text="Jitter"/>
+    </div>
 
-            <div class="mx-auto">
-            <SkillsCards imgi="astro.png" imgc="circel3.svg" text="Astro" />
-              
-            </div>
+  </div>
 
-            <div class="mx-auto"> 
-            <SkillsCards imgi="tailwind.svg" imgc="circel3.svg" text="Tailwind" />
-                
-            </div>
-
-            <div class="mx-auto"> 
-            <SkillsCards imgi="js.webp" imgc="circel2.svg" text="Js" />
-                
-            </div>
-
-            <div class="mx-auto">
-            <SkillsCards imgi="alpinejs.svg" imgc="circel2.svg" text="Alpine" />
-             
-            </div>
-
-            <div class="mx-auto"> 
-            <SkillsCards imgi="animatecss.svg" imgc="circel3.svg" text="Animate.css" />
-             
-            </div>
-
-            <div class="mx-auto">
-            <SkillsCards imgi="motionone.png" imgc="circel2.svg" text="Motion one" />
-               
-            </div>
-        </div>
-    </section>
+  <div class="flex justify-between "> 
+    <div class="p-8 mangeelementer7 w-fit">
+      <SkillsCards imgi="framer.svg" imgc="circel1.svg" text="Framer"/>
+    </div> 
+    <div class="p-8 mangeelementer8 w-fit opacity-0">
+      <SkillsCards imgi="framer.svg" imgc="circel1.svg" text="Framer"/>
+    </div> 
+  
+  </div>
 
     </div>
+  </div>
+  <div class="sticky top-1/2 ">
+  </div>
+</section> 
+
+
+
+<!-- Sprog mobil-->
+<section class="sticky md:hidden overflow-hidden pt-40">
+  <h3 class="xl:mt-20 text-xl lg:text-2xl xl:text-3xl">Sprog</h3>
+  <div class="sticky  mangeelementerinview md:grid md:grid-cols-2">
+      
+  <div class="flex justify-between "> 
+    <div class="p-8  mangeelementer1 w-fit ">
+      <SkillsCards imgi="html.png" imgc="circel4.svg" text="HTML" />
+    </div>
+
+    <div class="p-8  mangeelementer2 w-fit">
+      <SkillsCards imgi="css.png" imgc="circel4.svg" text="CSS" /> 
+    </div>
+  </div> 
+
+  <div class="flex justify-between "> 
+    <div class="p-8  mangeelementer3 w-fit">
+      <SkillsCards imgi="astro.png" imgc="circel3.svg" text="Astro" />
+    </div>
+
+    <div class="p-8  mangeelementer4 w-fit">
+      <SkillsCards imgi="tailwind.svg" imgc="circel3.svg" text="Tailwind" />  
+    </div>
+</div>  
+      
+
+  <div class="flex justify-between "> 
+    <div class="p-8 mangeelementer5 w-fit">
+      <SkillsCards imgi="js.webp" imgc="circel2.svg" text="Js" />
+    </div>
+
+    <div class="p-8 mangeelementer6 w-fit">
+      <SkillsCards imgi="alpinejs.svg" imgc="circel2.svg" text="Alpine" />
+    </div>
+
+  </div>
+
+  <div class="flex justify-between "> 
+    <div class="p-8 mangeelementer7 w-fit">
+      <SkillsCards imgi="animatecss.svg" imgc="circel3.svg" text="Animate.css" />
+    </div> 
+    <div class="p-8 mangeelementer8 w-fit">
+      <SkillsCards imgi="motionone.png" imgc="circel2.svg" text="Motion one" />
+    </div> 
+  
+  </div>
+
+    </div>
+  </div>
+  <div class="sticky top-1/2">
+  </div>
+</section> 
+
+<!-- Værktøjer web-->
+<section class="hidden md:sticky md:block ">
+    <h3 class="xl:mt-20 text-xl lg:text-2xl xl:text-3xl">Værktøjer</h3>
+    <div class="sticky top-1/4  mangeelementerinview md:grid md:grid-rows-2 gap-4">
+        
+    <div class="flex justify-between "> 
+      <div class="p-8  mangeelementer1 w-fit ">
+        <SkillsCards imgi="figma.png" imgc="full_circel.svg" text="Figma" />
+      </div>
+
+      <div class="p-8  mangeelementer2 w-fit">
+        <SkillsCards imgi="illustrator.png" imgc="circel4.svg" text="Illustrator" />
+      </div>
+
+      <div class="p-8  mangeelementer3 w-fit">
+        <SkillsCards imgi="xd.png" imgc="circel3.svg" text=" Adobe XD"/>
+      </div>
+
+      <div class="p-8  mangeelementer4 w-fit">
+        <SkillsCards imgi="vsc.png" imgc="full_circel.svg" text=" VS code" />
+      </div>
+
+      </div>    
+
+    <div class="flex justify-between "> 
+      <div class="p-8 mangeelementer5 w-fit">
+        <SkillsCards imgi="spline.png" imgc="circel1.svg" text="Spline" />
+      </div>
+
+      <div class="p-8 mangeelementer6 w-fit">
+        <SkillsCards imgi="jitter.png" imgc="circel1.svg" text="Jitter"/>
+      </div>
+
+      <div class="p-8 mangeelementer7 w-fit">
+        <SkillsCards imgi="framer.svg" imgc="circel1.svg" text="Framer"/>
+      </div> 
+      <div class="p-8 mangeelementer8 w-fit opacity-0">
+        <SkillsCards imgi="framer.svg" imgc="circel1.svg" text="Framer"/>
+      </div> 
+    </div>
+      </div>
+    </div>
+    <div class="sticky top-1/2 h-screen">
+    </div>
+  </section> 
+
+
+  <!-- Sprog web-->
+<section class=" hidden  md:sticky md:block">
+    <h3 class="xl:mt-20 text-xl lg:text-2xl xl:text-3xl">Sprog</h3>
+    <div class="sticky top-1/4  mangeelementerinview md:grid md:grid-rows-2 gap-4">
+        
+    <div class="flex justify-between "> 
+      <div class="p-8  mangeelementer1 w-fit ">
+        <SkillsCards imgi="html.png" imgc="circel4.svg" text="HTML" />
+      </div>
+
+      <div class="p-8  mangeelementer2 w-fit">
+        <SkillsCards imgi="css.png" imgc="circel4.svg" text="CSS" /> 
+      </div>
+
+      <div class="p-8  mangeelementer3 w-fit">
+        <SkillsCards imgi="astro.png" imgc="circel3.svg" text="Astro" />
+      </div>
+
+      <div class="p-8  mangeelementer4 w-fit">
+        <SkillsCards imgi="tailwind.svg" imgc="circel3.svg" text="Tailwind" />  
+      </div>
+
+      </div>    
+
+    <div class="flex justify-between "> 
+      <div class="p-8 mangeelementer5 w-fit">
+        <SkillsCards imgi="js.webp" imgc="circel2.svg" text="Js" />
+      </div>
+
+      <div class="p-8 mangeelementer6 w-fit">
+        <SkillsCards imgi="alpinejs.svg" imgc="circel2.svg" text="Alpine" />
+      </div>
+
+      <div class="p-8 mangeelementer7 w-fit">
+        <SkillsCards imgi="animatecss.svg" imgc="circel3.svg" text="Animate.css" />
+      </div> 
+      <div class="p-8 mangeelementer8 w-fit ">
+        <SkillsCards imgi="motionone.png" imgc="circel2.svg" text="Motion one" />
+      </div> 
+    </div>
+      </div>
+    </div>
+    <div class="sticky top-1/2 h-screen">
+    </div>
+  </section> 
+
+
 </article>
 
+
+
+<script> 
+/* Import af Motion One bibliotek */
+import { animate, stagger, inView, scroll, timeline } from "motion";
+
+ inView( ".mangeelementerinview", () =>{
+    animate( ".mangeelementer1", { x: [-2000, 0 ] }, { duration: 2 }) 
+    animate( ".mangeelementer2", { x: [-1500, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer3", { x: [-1000, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer4", { x: [-500, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer5", { x: [-2000, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer6", { x: [2000, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer7", { x: [1500, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer8", { x: [1000, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer9", { x: [500, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer10", { x: [2000, 0 ] }, { duration: 2 })
+    return () => {
+      animate( ".mangeelementer1", { x: [-2000, 0 ] }, { duration: 2 }) 
+      animate( ".mangeelementer2", { x: [-1500, 0 ] }, { duration: 2 })
+      animate( ".mangeelementer3", { x: [-1000, 0 ] }, { duration: 2 })
+      animate( ".mangeelementer4", { x: [-500, 0 ] }, { duration: 2 })
+      animate( ".mangeelementer5", { x: [-2000, 0 ] }, { duration: 2 })
+      animate( ".mangeelementer6", { x: [2000, 0 ] }, { duration: 2 })
+      animate( ".mangeelementer7", { x: [1500, 0 ] }, { duration: 2 })
+      animate( ".mangeelementer8", { x: [1000, 0 ] }, { duration: 2 })
+      animate( ".mangeelementer9", { x: [500, 0 ] }, { duration: 2 })
+      animate( ".mangeelementer10", { x: [2000, 0 ] }, { duration: 2 })
+    }
+  })
+
+</script>

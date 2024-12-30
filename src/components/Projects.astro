@@ -1,116 +1,128 @@
 ---
-import Button from "../components/Button.astro";
-import { Image } from "astro:assets";
-import ArrowUp from "../assets/images/arrow-down.svg";
-import ArrowDown from "../assets/images/arrow-up.svg";
 import ProjectsCards from "./ProjectsCards.astro";
 ---
-<div>
-
-
-
-    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-2 py-2.5 text-center items-center inline-flex  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-96 " type="button">1 Semester <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-        </svg>
-        </button>
         
-        <!-- Dropdown menu -->
-        <div id="dropdown" class="z-10 hidden ">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200 md:flex justify-around gap-8" aria-labelledby="dropdownDefaultButton">
-              <li class="">
-                <ProjectsCards imgp="/projects/emnesite.png" titelp="Emnesite" textp="- Her var opgaven at lave et website med et valgfrit valgfrit enme og valgte specifikke stilart til design " linkp="https://emnesite1sem.netlify.app" linktextp="Emnesite"/>
-              </li>
-              <li>
-                <ProjectsCards imgp="/projects/interview_web.png" titelp="Interviewsite" textp="- Her fik jeg interviewet en spændende person og skulle lave et website til hvor videoen fra youtube og opbygningen til video kan ses" href="" linktextp="Interviewsite"/>
-              </li>
-              <li>
-                <ProjectsCards imgp="/projects/t5_web.png" titelp="Virksomhedssite" textp="- Her blev der redesignet og kodet et nyt website til valbyparken disc golf, som var den første virksomhed jeg skulle arbejde med" href="" linktextp="Valbyparken - Disc golf"/>
-              </li>
-            </ul>
-        </div>
+<div class="flex justify-between pt-10 lg:pt-20 xl:pt-44">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+</div>
 
-        <!-- 
-    <div class="2sem md:grid md:grid-cols-2 lg:grid-cols-3">
-        <div class="dropdown inline-block relative">
-            <button class="dropdown-btn border-2 py-10 px-16 cursor-pointer hover:bg-slate-400 flex items-center">
-                <p class="mr-2">2SEM</p> 
-                <!-- chevron-down --> <!-- 
-                <svg class="chevron-down w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-                <!-- chevron-up --> <!-- 
-                <svg class="chevron-up w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-                </svg>
-            </button>
-            <div class="dropdown-options hidden absolute overflow-auto ">
-                <ProjectsCards imgp="/projects/ca_designsystemm.png" titelp="CA" textp="- Her blev der lavet en kampagne til civils ingeniørens a-kasse hvor der blev lavet video content til Sociale Medier" href="https://cat9kampagne.netlify.app" linktextp="CA: civils ingeniørens a-kasse"/>
-                <ProjectsCards imgp="/projects/onebrick.png" titelp="OneBrick" textp="- 2. semesters eksamensprojekt, her blev der lavet et website til en nyopstartet virksomhed en fokus på bæredygtighed" href="https://onebrick.netlify.app" linktextp="OneBrick"/>
-            </div>
-        </div>
-    </div>
+<div class="container overflow-clip text-blue-950">
 
-    <div class="3sem md:grid md:grid-cols-2 lg:grid-cols-3">
-        <div class="dropdown inline-block relative">
-            <button class="dropdown-btn border-2 py-10 px-16 cursor-pointer hover:bg-slate-400 flex items-center">
-                <p class="mr-2">3SEM</p>
-                <!-- chevron-down --> <!--
-                <svg class="chevron-down w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-                <!-- chevron-up --> <!--
-                <svg class="chevron-up w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-                </svg>
-            </button>
-            <div class="dropdown-options hidden absolute overflow-auto ">
-                <ProjectsCards imgp="/projects/cph-lab.png" titelp="CPH-LAB" textp="- 3. semesters eksamensprojekt, her blev der lavet et redesign til CPH-LAB som er en virksomhed som sælger analog kamera og fremkaldese af film" href="https://cph-lab.netlify.app" linktextp="CPH-LAB"/>
-                <ProjectsCards imgp="/projects/plasticchange.png" titelp="Plastic change" textp="- Her blev der lavet en kampagne som skulle laves til en scrollytelling til plastic change med fokus på brug af bitmap(dvs, almindelig fotos), hvor vi først lave en detaljeret figma prototype" href="https://singleusesucksplasticchange.netlify.app" linktextp="Plastic change"/>
-            </div>
-        </div>
-    </div>
-</div> -->
+  <section id="horisontalscrollsection1" class="h-[500vh] relative">
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl absolute top-2 font-semibold mt-10 md:mt-20">Projekter</h1>
+    <ul id="horisontalliste1" class="list-none flex sticky top-0 p-8">
+      <!--1 semester -->
+      <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <img src="dot01.png" alt="prik" class="mx-auto">
+        <h2 class="sticky top-1/4 text-2xl lg:text-4xl xl:text-4xl mx-auto font-medium">Semester</h2>
+      </li>
+      <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <ProjectsCards imgp="/projects/emnesite.png" titelp="Emnesite" textp="Her var opgaven at lave et website med et valgfrit valgfrit enme og valgte specifikke stilart til design " linkp="https://emnesite1sem.netlify.app" linktextp="Emnesite"/>
+      </li>
 
-<style>
-    .dropdown .chevron-up {
-      display: none;
-    }
-    
-    .dropdown .dropdown-btn.open .chevron-up {
-      display: inline-block;
-    }
-    
-    .dropdown .dropdown-btn.open .chevron-down {
-      display: none;
-    }
-    
-    .dropdown:hover .dropdown-options {
-      display: block;
-    }
-    
-    .dropdown-options a {
-      display: block;
-      color: #000000;
-      padding: 5px;
-      text-decoration: none;
-      padding: 20px 40px;
-    }
-    
-    .dropdown-options a:hover {
-      color: #0a0a23;
-      background-color: #ddd;
-      border-radius: 5px;
-    }
-    </style>
+      <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <ProjectsCards imgp="/projects/interview_web.png" titelp="Interviewsite" textp="Her fik jeg interviewet en spændende person og skulle lave et website til hvor videoen fra youtube og opbygningen til video kan ses" linkp="https://videosite1s.netlify.app" linktextp="Interviewsite"/>
+      </li>
+
+      <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <ProjectsCards imgp="/projects/t5_web.png" titelp="Virksomhedssite" textp="Her blev der redesignet og kodet et nyt website til valbyparken disc golf, som var den første virksomhed jeg skulle arbejde med" linkp="https://t5-1s-virksomhedssite.netlify.app" linktextp="Valbyparken - Disc golf"/>
+      </li>
+
+    </ul>
+  </section>
+</div>
+
+
+<div class="container mx-auto p-8 overflow-clip text-blue-950">
+
+  <section id="horisontalscrollsection2" class="h-[500vh] relative">
+
+    <ul id="horisontalliste2" class="list-none flex sticky top-0">
+      <!--2 semester -->
+      <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <img src="dot02.png" alt="prik" class="mx-auto">
+        <h2 class="sticky top-1/4 text-2xl lg:text-4xl xl:text-4xl mx-auto font-medium">Semester</h2>
+      </li>
+      <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <ProjectsCards imgp="/projects/ca_designsystemm.png" titelp="CA" textp="Her blev der lavet en kampagne til civils ingeniørens a-kasse hvor der blev lavet video content til Sociale Medier" linkp="https://cat9kampagne.netlify.app" linktextp="CA: civils ingeniørens a-kasse"/>
+      </li>
+
+      <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <ProjectsCards imgp="/projects/onebrick.png" titelp="OneBrick" textp="2. semesters eksamensprojekt, her blev der lavet et website til en nyopstartet virksomhed en fokus på bæredygtighed" linkp="https://onebrick.netlify.app" linktextp="OneBrick"/>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<div class="container mx-auto p-8 overflow-clip text-blue-950">
+
+  <section id="horisontalscrollsection3" class="h-[500vh] relative">
+
+    <ul id="horisontalliste3" class="list-none flex sticky top-0">
+       <!--3 semester -->
+       <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <img src="dot03.png" alt="prik" class="mx-auto">
+        <h2 class="sticky top-1/4 text-2xl lg:text-4xl xl:text-4xl mx-auto font-medium">Semester</h2>
+      </li>
+      <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <ProjectsCards imgp="/projects/cph-lab.png" titelp="CPH-LAB" textp="3. semesters eksamensprojekt, her blev der lavet et redesign til CPH-LAB som er en virksomhed som sælger analog kamera og fremkaldese af film" linkp="https://cph-lab.netlify.app" linktextp="CPH-LAB"/>
+      </li>
+
+      <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+        <ProjectsCards imgp="/projects/plasticchange.png" titelp="Plastic change" textp="Her blev der lavet en kampagne som skulle laves til en scrollytelling til plastic change med fokus på brug af bitmap(dvs, almindelig fotos), hvor vi først lave en detaljeret figma prototype" linkp="https://singleusesucksplasticchange.netlify.app" linktextp="Plastic change"/>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<div class="flex justify-between pt-10 lg:pt-20 xl:pt-44">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+  <img src="dot.png" alt="prik" class=" w-6 lg:w-8">
+</div>
 
 <script>
-    document.querySelectorAll('.dropdown-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const dropdownContent = button.nextElementSibling;
-            dropdownContent.classList.toggle('hidden');
-            
-            // Toggle chevron icons
-            button.classList.toggle('open');
-        });
-    });
-    </script>
+/* Import af Motion One bibliotek */
+import { animate, stagger, inView, scroll, timeline } from "motion";
+
+const items1 = document.querySelectorAll("#horisontalliste1 li");
+const items2 = document.querySelectorAll("#horisontalliste2 li");
+const items3 = document.querySelectorAll("#horisontalliste3 li");
+
+scroll(
+   animate("#horisontalliste1", {
+     transform: ["none", `translateX(-${items1.length - 1}00vw)`]
+   }),
+   { target: document.querySelector("#horisontalscrollsection1") }
+ ); 
+
+ scroll(
+   animate("#horisontalliste2", {
+     transform: ["none", `translateX(-${items2.length - 1}00vw)`]
+   }),
+   { target: document.querySelector("#horisontalscrollsection2") }
+ ); 
+
+ scroll(
+   animate("#horisontalliste3", {
+     transform: ["none", `translateX(-${items3.length - 1}00vw)`]
+   }),
+   { target: document.querySelector("#horisontalscrollsection3") }
+ ); 
+
+
+ </script>
+
+

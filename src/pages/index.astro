@@ -9,49 +9,26 @@ import Contact from "../components/Contact.astro";
 <MainLayout title="Professionelle profil til praktik">
 	<article class="" x-data>
 		<!-- lav motion animation der kort swiper op når der scrolles -->
-	<Intro></Intro> <!-- udatering færdig for intro -->
-	<Skills></Skills> 
-	<Projects></Projects>
-	<Learn></Learn>  
+        <Intro/>
+        <Skills/>
+        <Projects/>
 	</article>
 </MainLayout>
 
 
+<!--
+
+animation til moduler
+
+ <div class="flex items-center sticky top-0 h-screen w-100 bg-blue-500">
+       --hero--
+        <div class="flex items-center sticky top-0 h-screen w-100 bg-blue-500">
+        --sektion1--
+        </div>
+
+-->
+
 <script>
 
-    import { inView } from "motion";
-    
-    //fadeIn
-    
-    const fadeInp1 = document.querySelector(".fadeInp1");
-    
-    inView(fadeInp1, () => {
-    
-        fadeInp1.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
-    
-    }); 
-    
-    const fadeInp2 = document.querySelector(".fadeInp2");
-    
-    inView(fadeInp2, () => {
-    
-        fadeInp2.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
-    
-    }); 
-    
-    const fadeInp3 = document.querySelector(".fadeInp3");
-    
-    inView(fadeInp3, () => {
-    
-        fadeInp3.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
-    
-    }); 
-    
-    const fadeInp4 = document.querySelector(".fadeInp4");
-    
-    inView(fadeInp4, () => {
-    
-        fadeInp4.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
-    
-    }); 
-    </script>
+ 
+</script>
